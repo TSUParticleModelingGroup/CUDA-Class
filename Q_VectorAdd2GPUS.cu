@@ -20,6 +20,8 @@
 
  5. Return Results to the CPU:
     Once both GPUs have completed their computations, transfer the results back to the CPU and verify that the results are correct.
+
+ 6. Do NOT use "unified memory" I want you to copy the memory to each GPU so you can learn how to do it on a simple problem.
 */
 
 /*
