@@ -6,8 +6,9 @@
  What to do:
  This code runs a random walk for 10,000 steps on the CPU.
 
- 1. Use cuRAND to run 20 random walks simultaneously on the GPU, each with a different seed.
-    Print out all 20 final positions.
+ 1. Use cuRAND to run 2,000 random walks of 10,000 steps simultaneously on the GPU, each with a different seed.
+    Print the final positions of random walks 5, 100, 789, and 1622 as a spot check to get a warm 
+    fuzzy feeling that your code is producing different random walks for each thread.
 
  2. Use cudaMallocManaged(&variable, amount_of_memory_needed);
     This allocates unified memory, which is automatically managed between the CPU and GPU.
@@ -76,4 +77,5 @@ int main(int argc, char** argv)
 	printf("\n Final position = (%d,%d) \n", positionX, positionY);
 	return 0;
 }
+
 
